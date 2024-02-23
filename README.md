@@ -24,7 +24,7 @@ If you have any questions, feedback, or issues with the website, please don't he
 
 ### Links
 
-- Live Site URL: [live site URL here](https://your-live-site-url.com)
+- [live site URL here](https://frehiwot-mesfin.github.io/Ethiopian-Cuisine-Recipes/)
 
 ## My process
 
