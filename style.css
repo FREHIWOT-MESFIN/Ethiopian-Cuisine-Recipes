@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+   
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-container{
+    padding-inline: 10px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.7rem;
+    box-shadow: 15, 0, 10, black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.nav-container .logo{
+    height: 50px;
+}
+
+.hero-section{
+    background-image: url('./images/InjeraCoverImage.jpg');
+    height: 100dvh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section.active{
+    height: 20dvh;
+}
+.search-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 30px;
+    width: 300px;
+    padding: 5px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.search-section input{
+    height: 30px;
+    outline: none;
+    border: none;
+    margin-left: 5px;
+}
+.search-section button{
+    padding: 5px;
+    background: orange;
+    border: none;
+    border-radius: 8px;
+    margin-left: 80px;
+}
+.allRecipe-section{
+    min-height: 80dvh;
+}
+.recipes-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.card-container{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    margin: 25px 5px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.card img{
+    border-radius: 20px;
+    width: 300px;
+}
+.card button{
+    background: orange;
+    margin: 10px 8px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+.card h3{
+    padding: 5px;
+    margin: 7px 0;
+}
+.infoDiv{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+   
+}
+.discription{
+    color: gray;
+    height: 60px;
+    overflow: hidden;
+    padding: 5px;
+}
+.modal-section{
+    z-index: 9999;
+    display: none;
+}
+.modal-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+.modal-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding: 0 10px 10px 10px;
+    background: orange;
+    height: 600px;
+}
+.modal-container img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.modal-container::-webkit-scrollbar{
+    background: orange;
+}
+.modal{
+    padding: 5px;
+   
+}
+.modal ul li{
+    
+}
+.closeBtn{
+    display: flex;
+    flex-direction: row-reverse;
+    color: red;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+/*---------------------footer-----------------------*/
+
+.footer-section{
+    height: 100px;
+    background: gray;
+    display: flex;
+    
+   
+}
+.footer-copy{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+@media (max-width: 992px){
+    .card-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 768px){
+    .card-container{
+        display: flex;
+        flex-wrap: wrap;
+          
+    }
+}
