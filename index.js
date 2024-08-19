@@ -175,6 +175,12 @@ let hero = document.querySelector(".hero-section");
 search.addEventListener("click", () => {
   searchRecipes();
 });
+input.addEventListener('keyup', (event) => {
+  if (event.key === 'Enter') {
+    searchRecipes();
+  }
+});
+
 
 
 function searchRecipes() {
