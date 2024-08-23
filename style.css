@@ -28,7 +28,8 @@ a{
     height: 80dvh;
     width: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
+    background-attachment: fixed;
     background-size: cover;
     filter: grayscale(0.5);
     display: flex;
